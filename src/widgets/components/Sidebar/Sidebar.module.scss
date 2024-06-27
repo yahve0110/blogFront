@@ -1,0 +1,33 @@
+.sidebar {
+  width: 60px;
+  border-radius: 20px;
+  height: calc(100vh - 100px);
+  margin-top: 20px;
+  background: var(--primary-color);
+  transition: var(--transition03);
+  font-size: 16px;
+  position: relative;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  width: 240px;
+}
+
+.arrowBtn {
+  background: transparent;
+  border: transparent;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transform: rotate(180deg);
+  position: absolute;
+  top: calc((100vh - 100px) / 2);
+  right: 3px;
+}
+
+.btnRotate {
+  transform: rotate(0);
+}

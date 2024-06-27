@@ -1,0 +1,79 @@
+.navbar {
+  height: 60px;
+  background: var(--primary-color);
+  transition: var(--transition03);
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 10px;
+  transition: var(--transition03);
+  cursor: pointer;
+}
+
+.navbar a.active {
+  color: rgb(20, 152, 188);
+}
+
+.langBtn {
+  background: transparent;
+  border: transparent;
+  margin-left: 10px;
+  color: var(--text-color);
+}
+
+.navbarend {
+  display: flex;
+  align-items: center;
+}
+
+.navbarstart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.categoryModal {
+  top: 42px;
+  left: 140px;
+  position: absolute;
+  width: 150px;
+  height: 0;
+  background: var(--primary-color);
+  padding: 10px;
+  padding-top: 25px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+}
+
+.categoryModalOpen {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loginText{
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: var(--transition03);
+  cursor: pointer;
+}
+
+
+.logout{
+  font-size: 19px;
+  margin-left: 10px;
+  color: var(--text-color);
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.modalOpen {
+    max-width: 500px;           
+     
+    height: 80%;           /* Adjust height for better responsiveness */
+    max-height: 700px;     /* Ensure it doesn't exceed 700px */
+    position: fixed;       /* Use fixed positioning to center properly */
+    left: 50%;             /* Center horizontally */
+    top: 50%;              /* Center vertically */
+    transform: translate(-50%, -50%); /* Use transform to adjust centering */
+    background: var(--primary-color); /* Use the primary color variable */
+    box-shadow: 0 4px 8px rgba(7, 7, 7, 0.845); /* Add subtle shadow */
+    border-radius: 8px;    /* Add rounded corners */
+    padding: 20px;         /* Add padding for content spacing */
+    overflow: auto;        /* Ensure it can scroll if content overflows */
+    z-index: 11;
+    overflow: hidden;
+  }
+
+  .modalClosed{
+    display: none;
+  }
+  
+
+  .modelContainer{
+    position: fixed ;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(12, 12, 12, 0.679) ;
+  }
+

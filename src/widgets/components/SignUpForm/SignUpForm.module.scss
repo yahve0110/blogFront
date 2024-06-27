@@ -1,0 +1,74 @@
+.form {
+  padding: 5px;
+  color: var(--text-color);
+  font-size: 19px;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+}
+
+.form h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  margin-top: 0;
+  color: var(--secondary-text-color);
+}
+
+.form div {
+  margin-bottom: 30px;
+}
+
+.form label {
+  margin-bottom: 10px;
+}
+
+.form input {
+  height: 30px;
+  padding: 3px;
+}
+
+.form input:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0px 0px 9px 5px rgba(20, 157, 215, 0.87);
+  -moz-box-shadow: 0px 0px 9px 5px rgba(20, 157, 215, 0.87);
+  box-shadow: 0px 0px 9px 5px rgba(20, 157, 215, 0.87);
+}
+
+.form p.error {
+  color: red;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+.signup p {
+  margin-left: 10px;
+  font-size: 17px;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; 
+}
+
+.signup p:hover {
+  color: rgba(20, 157, 215, 0.87);
+}
+
+.inputs div {
+  display: flex;
+  flex-direction: column;
+}
+
