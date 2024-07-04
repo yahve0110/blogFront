@@ -1,10 +1,9 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "../App";
-import React, { useState } from "react";
+import React from "react";
 import { MainLazy } from "../../pages/Main/MainLazy";
-import { ProfileLazy } from "../../pages/Profile/ProfileLazy";
-import SignUp from "../../widgets/components/SignUpForm/SignUpForm";
-import Modal from "../../widgets/components/Modal/Modal";
+import { ProfileLazy } from "../../pages/Profile/ui/ProfileLazy";
+import PrivateRoute from "../../widgets/PrivateRoute/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -21,11 +20,13 @@ export const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <ProfileLazy />,
-      },
-      {
-        path: "/signup",
-        element: <SignUp />,
+        element: <PrivateRoute />,
+        children: [
+          {
+            path: "",
+            element: <ProfileLazy />,
+          },
+        ],
       },
     ],
   },

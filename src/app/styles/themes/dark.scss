@@ -1,13 +1,13 @@
 .app.dark {
-  --primary-color: linear-gradient(
-    90deg,
-    rgba(25, 32, 42, 1) 6%,
-    rgba(25, 32, 42, 0.7147233893557423) 86%
-  );
-  --secondary-color: #040718;
+  --primary-color: #040718;
+  --secondary-color: #090f29;
+
+  --elements-color: #030922;
 
   --text-color: rgb(224, 222, 222);
   --secondary-text-color: #149cd7;
+
+  --border-color:rgba(145, 145, 145, 0.596);
 
   --secondary-neon-color: 0px 0px 106px 29px rgba(20, 157, 215, 0.83);
 }

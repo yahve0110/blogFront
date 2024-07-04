@@ -1,0 +1,35 @@
+.localModal {
+    position: absolute;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--elements-color);
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    top: -100%; /* Start offscreen */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 0.6s ease-in-out, opacity 0.3s ease-in-out; /* Transition for slide and fade */
+    opacity: 0; /* Start with opacity 0 */
+    z-index: 1000;
+    animation: fadeInOut 0.6s ease-in-out; /* Animation for fading */
+    pointer-events: none; /* Disable pointer events when hidden */
+  }
+
+  .localModal a{
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  
+  .localModal.show {
+    top: 50px; /* Slide down to show */
+    opacity: 1; /* Fade in */
+    pointer-events: auto; /* Enable pointer events when shown */
+  }
+  
+  .localModal.initial {
+    display: none; /* Hide initially */
+  }
+  

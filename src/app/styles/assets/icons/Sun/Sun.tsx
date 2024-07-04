@@ -1,4 +1,5 @@
 import styles from "./Sun.module.scss"
+import React from 'react';
 
 const Sun = () => {
   return (

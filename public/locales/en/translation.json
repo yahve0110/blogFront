@@ -24,5 +24,7 @@
   "signUp": " Sign up",
   "haveAccount": "Have an account ?",
   "signIn": "Sign in",
-  "logout": "Logout"
+  "logout": "Logout",
+  "profileName": "Name",
+  "secondName": "Second name"
 }

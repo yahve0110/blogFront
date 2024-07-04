@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
-import Navbar from "../widgets/components/Navbar/Navbar";
+import Navbar from "../widgets/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import { RootState, useAppDispatch } from "./store/store";
 import React, { Suspense, useEffect } from "react";
-import Loader from "../widgets/components/Loader/Loader";
+import Loader from "../widgets/Loader/Loader";
 import { userIsLoggedIn } from "../features/appSlice/appSlice";
 
 function App() {

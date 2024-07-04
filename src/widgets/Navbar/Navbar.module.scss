@@ -1,11 +1,22 @@
 .navbar {
-  height: 60px;
+  height: 59px;
   background: var(--primary-color);
   transition: var(--transition03);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbarContainer {
   display: flex;
   align-items: center;
-  padding: 0 100px;
   justify-content: space-between;
+  height: 100%;
+  padding: 0 30px;
+  width: 1144px;
 }
 
 .navbar a {
@@ -39,7 +50,6 @@
   position: relative;
 }
 
-
 .categoryModal {
   top: 42px;
   left: 140px;
@@ -52,7 +62,10 @@
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    height 0.3s ease;
 }
 
 .categoryModalOpen {
@@ -61,19 +74,34 @@
   visibility: visible;
 }
 
-.loginText{
+.loginText {
   color: var(--text-color);
   text-decoration: none;
   font-size: 18px;
   margin-right: 10px;
   transition: var(--transition03);
   cursor: pointer;
+  position: relative;
 }
 
-
-.logout{
+.logout {
   font-size: 19px;
-  margin-left: 10px;
+  margin-top: 5px;
   color: var(--text-color);
   cursor: pointer;
+}
+
+.profileBlock{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+}
+
+.arrow{
+  position: absolute;
+  top: 15px;
+  left: 19px;
+
+
 }

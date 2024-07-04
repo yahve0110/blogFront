@@ -3,18 +3,15 @@ import styles from "./LoginForm.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
 import Button from "../Button/Button";
 import { useTranslation } from "react-i18next";
-import { useAppDispatch } from "../../../app/store/store";
-import {
-  closeModal,
-  setContent,
-} from "../../../features/modalSlice/modalSlice";
+import { useAppDispatch } from "../../app/store/store";
+import { closeModal, setContent } from "../../features/modalSlice/modalSlice";
 import { LoginForm } from "./types";
-import userAuth from "../../../shared/api/userApi";
+import userAuth from "../../shared/api/userAuth";
 import {
   appIsLoading,
   appIsNotLoading,
   userIsLoggedIn,
-} from "../../../features/appSlice/appSlice";
+} from "../../features/appSlice/appSlice";
 import { useNavigate } from "react-router-dom";
 
 const LoginFormComponent = () => {
@@ -35,13 +32,13 @@ const LoginFormComponent = () => {
       const response = await userAuth.login(data); // Ожидаем ответ от API
       console.log("Login successful:", response);
       dispatch(closeModal());
-      dispatch(userIsLoggedIn())
+      dispatch(userIsLoggedIn());
       navigate("/");
     } catch (error) {
       console.error("Login failed:", error);
       setError("Failed to login. Please check your credentials."); // Устанавливаем сообщение об ошибке
     } finally {
-      dispatch(appIsNotLoading()); 
+      dispatch(appIsNotLoading());
     }
   };
 

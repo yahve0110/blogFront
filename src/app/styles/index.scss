@@ -11,15 +11,18 @@ body {
 .app {
   max-height: 100vh;
   width: 100%;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   transition: var(--transition03);
 }
 
 .page {
   width: 100%;
   height: calc(100vh - 60px);
-  background: var(--secondary-color);
   transition: var(--transition03);
- 
+  display: flex;
+  justify-content: center;
 }
 
+.main-content {
+  width: 1140px;
+}

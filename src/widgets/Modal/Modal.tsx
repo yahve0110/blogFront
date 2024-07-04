@@ -1,8 +1,8 @@
 import React, { MouseEventHandler, ReactNode } from "react";
 import styles from "./Modal.module.scss";
 import { useSelector } from "react-redux";
-import { RootState, useAppDispatch } from "../../../app/store/store";
-import { closeModal } from "../../../features/modalSlice/modalSlice";
+import { RootState, useAppDispatch } from "../../app/store/store";
+import { closeModal } from "../../features/modalSlice/modalSlice";
 
 const Modal = ({ children }: { children: ReactNode }) => {
   const stopPropagation: MouseEventHandler<HTMLDivElement> = (e) => {

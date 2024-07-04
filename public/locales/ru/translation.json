@@ -23,5 +23,8 @@
   "signUp": "Регистрация",
   "haveAccount": " Уже есть аккаунт ? ",
   "signIn": "Войти",
-  "logout": "Выйти"
+  "logout": "Выйти",
+  "welcome": "Добро пожаловать",
+  "profileName": "Имя",
+  "secondName": "Фамилия"
 }

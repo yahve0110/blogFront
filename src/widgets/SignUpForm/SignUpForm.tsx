@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./SignUpForm.module.scss";
 import { useTranslation } from "react-i18next";
 import Button from "../Button/Button";
-import { useAppDispatch } from "../../../app/store/store";
-import { setContent } from "../../../features/modalSlice/modalSlice";
+import { useAppDispatch } from "../../app/store/store";
+import { setContent } from "../../features/modalSlice/modalSlice";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 interface SignUpFormInputs {
@@ -49,7 +49,9 @@ const SignUpForm = () => {
               type="text"
               {...register("email", { required: t("emailRequired") })}
             />
-            {errors.email && <p className={styles.error}>{errors.email.message}</p>}
+            {errors.email && (
+              <p className={styles.error}>{errors.email.message}</p>
+            )}
           </div>
           <div>
             <label>{t("signUpNickname")}</label>
@@ -58,7 +60,9 @@ const SignUpForm = () => {
               type="text"
               {...register("nickname", { required: t("nicknameRequired") })}
             />
-            {errors.nickname && <p className={styles.error}>{errors.nickname.message}</p>}
+            {errors.nickname && (
+              <p className={styles.error}>{errors.nickname.message}</p>
+            )}
           </div>
           <div>
             <label>{t("signUpFirstName")}</label>
@@ -67,7 +71,9 @@ const SignUpForm = () => {
               type="text"
               {...register("firstName", { required: t("firstNameRequired") })}
             />
-            {errors.firstName && <p className={styles.error}>{errors.firstName.message}</p>}
+            {errors.firstName && (
+              <p className={styles.error}>{errors.firstName.message}</p>
+            )}
           </div>
           <div>
             <label>{t("signUpLastName")}</label>
@@ -76,7 +82,9 @@ const SignUpForm = () => {
               type="text"
               {...register("lastName", { required: t("lastNameRequired") })}
             />
-            {errors.lastName && <p className={styles.error}>{errors.lastName.message}</p>}
+            {errors.lastName && (
+              <p className={styles.error}>{errors.lastName.message}</p>
+            )}
           </div>
           <div>
             <label>{t("loginPassword")}</label>
@@ -85,7 +93,9 @@ const SignUpForm = () => {
               placeholder={t("password")}
               {...register("password", { required: t("passwordRequired") })}
             />
-            {errors.password && <p className={styles.error}>{errors.password.message}</p>}
+            {errors.password && (
+              <p className={styles.error}>{errors.password.message}</p>
+            )}
           </div>
           <div>
             <label>{t("loginRepeatPassword")}</label>

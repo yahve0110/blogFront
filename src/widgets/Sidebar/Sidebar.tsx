@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./Sidebar.module.scss";
-import ArrowIcon from "../../../app/styles/assets/icons/Arrow/ArrowIcon";
+import ArrowIcon from "../../app/styles/assets/icons/Arrow/ArrowIcon";
 import React from "react";
 
 const Sidebar = () => {
@@ -16,8 +16,10 @@ const Sidebar = () => {
         onClick={toggleSidebar}
         className={`${styles.arrowBtn} ${open && styles.btnRotate}`}
       >
-        <span onMouseOver={()=>setColor("#149cd7")}
-          onMouseLeave={()=>setColor("white")}>
+        <span
+          onMouseOver={() => setColor("#149cd7")}
+          onMouseLeave={() => setColor("white")}
+        >
           <ArrowIcon color={color} />
         </span>
       </button>

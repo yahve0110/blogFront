@@ -1,4 +1,5 @@
 import styles from "./Moon.module.scss";
+import React from 'react';
 
 const Moon = () => {
   return (
