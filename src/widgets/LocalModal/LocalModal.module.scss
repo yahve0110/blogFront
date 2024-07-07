@@ -11,10 +11,10 @@
     top: -100%; /* Start offscreen */
     left: 50%;
     transform: translateX(-50%);
-    transition: top 0.6s ease-in-out, opacity 0.3s ease-in-out; /* Transition for slide and fade */
+    transition: top 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Transition for slide and fade */
     opacity: 0; /* Start with opacity 0 */
     z-index: 1000;
-    animation: fadeInOut 0.6s ease-in-out; /* Animation for fading */
+    animation: fadeInOut 0.4s ease-in-out; /* Animation for fading */
     pointer-events: none; /* Disable pointer events when hidden */
   }
 

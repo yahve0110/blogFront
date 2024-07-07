@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.postItem{
+    margin-bottom: 30px;
+}

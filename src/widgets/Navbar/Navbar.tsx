@@ -120,6 +120,7 @@ const Navbar: React.FC = memo(() => {
         </div>
       </div>
       <div onClick={switchTheme}>{theme === "light" ? <Sun /> : <Moon />}</div>
+
     </div>
   );
 });

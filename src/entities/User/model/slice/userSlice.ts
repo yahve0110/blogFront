@@ -1,13 +1,32 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { User } from "../types/User";
 import { userInfoAPI } from "../../api/userInfo";
+import axios from "axios";
 
-export const fetchUser = createAsyncThunk<User, void>(
+
+export const fetchUser = createAsyncThunk<User | null, void, { rejectValue: string }>(
   "user/fetchUser",
-  async () => {
-    const token = localStorage.getItem("token");
-    const response = await userInfoAPI.fetchUser(token);
-    return response;
+  async (_, { rejectWithValue }) => {
+    try {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        return rejectWithValue("Token is null or undefined");
+      }
+      const response = await userInfoAPI.fetchUser(token);
+      return response;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        if (error.response && error.response.status === 403) {
+          localStorage.removeItem("token");
+         window.location.reload()
+
+          return rejectWithValue("403 Forbidden");
+        }
+        return rejectWithValue(error.message);
+      } else {
+        return rejectWithValue("Unexpected error");
+      }
+    }
   }
 );
 

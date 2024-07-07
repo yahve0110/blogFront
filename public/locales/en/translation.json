@@ -26,5 +26,6 @@
   "signIn": "Sign in",
   "logout": "Logout",
   "profileName": "Name",
-  "secondName": "Second name"
+  "secondName": "Second name",
+  "ReadBtn": "Read more..."
 }

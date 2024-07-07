@@ -26,5 +26,6 @@
   "logout": "Выйти",
   "welcome": "Добро пожаловать",
   "profileName": "Имя",
-  "secondName": "Фамилия"
+  "secondName": "Фамилия",
+  "ReadBtn": "Читать..."
 }

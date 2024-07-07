@@ -4,6 +4,7 @@ import React from "react";
 import { MainLazy } from "../../pages/Main/MainLazy";
 import { ProfileLazy } from "../../pages/Profile/ui/ProfileLazy";
 import PrivateRoute from "../../widgets/PrivateRoute/PrivateRoute";
+import { PostLazy } from "../../pages/PostPage/ui/PostPageLazy";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ export const router = createBrowserRouter([
             element: <ProfileLazy />,
           },
         ],
+      },
+      {
+        path: "/post/:id",
+        element: <PostLazy />,
+        
       },
     ],
   },

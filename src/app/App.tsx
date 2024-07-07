@@ -22,9 +22,7 @@ function App() {
     <>
       <div className={`app ${theme}`}>
         <Navbar />
-
         <div className="page">
-          {/* <Sidebar /> */}
           <div className="main-content">
             <Suspense fallback={<Loader />}>
               {isLoading ? <Loader /> : <Outlet />}
