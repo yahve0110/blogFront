@@ -1,4 +1,132 @@
-.postContainer{
-    height: 100%;
-   overflow: auto;
+.pageContainer {
+  height: calc(100vh - 80px - 2rem);
+  color: var(--text-color);
+
+  margin-top: 2rem;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: space-between;
+font-size: 22px;
+}
+
+.pageContainer a{
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.postContainer {
+  padding: 10px 20px;
+  background: var(--primary-color);
+  max-width: 800px;
+  overflow: auto;
+}
+
+.postContainer h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.postContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.authorContainer {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.authorContainer div {
+  display: flex;
+  align-items: center;
+}
+
+.authorContainer img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.imgContainer {
+  max-width: 800px;
+  max-height: 400px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+
+}
+
+.postImg {
+  width: 100%;
+  max-height: 800px;
+  object-fit: cover;
+  height: auto;
+}
+
+.commentContainer {
+  width: 320px;
+  background: var(--primary-color);
+
+  padding: 10px 20px;
+  background: var(--primary-color);
+  padding-right: 10px;
+
+}
+
+.commentsBlock {
+  height: 75%;
+  overflow: auto;
+
+}
+.commentsBlock h3{
+  margin-bottom: 10px;
+
+}
+
+.commentsBlock::-webkit-scrollbar {
+    width: 3px;
+    height: 8px; 
+
+}
+
+/* Track */
+.commentsBlock::-webkit-scrollbar-track {
+    background:  var(--secondary-color) ; /* Background color of the track */
+}
+
+/* Handle */
+.commentsBlock::-webkit-scrollbar-thumb {
+    background: var(--secondary-text-color); /* Color of the handle */
+    border-radius: 6px; /* Round corners */
+}
+
+.commentContainer::-webkit-scrollbar {
+  display: none;
+}
+
+
+.backBtn{
+  position: absolute;
+  left: 100px;
+  border: transparent;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+
+.backBtn .backArrow{
+  width: 30px;
+  height: 30px;
+  color: var(--text-color);
 }

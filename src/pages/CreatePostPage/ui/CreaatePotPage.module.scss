@@ -1,0 +1,61 @@
+.container{
+    margin-top: 2rem;
+   
+}
+
+.authorContainer {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .authorContainer a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+  }
+  
+  .authorContainer div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .authorContainer img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .titleInput{
+    height: 30px;
+    border: none;
+    width: 300px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 20px;
+    color: var(--text-color);
+
+    background-color: var(--primary-color);
+  }
+
+
+  .textArea{
+    resize: none;
+    min-height: 200px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+
+  }

@@ -1,0 +1,26 @@
+.commentWrapper{
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+
+
+.authorContainer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-right: 5px;
+}
+.authorContainer div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.authorContainer img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+}

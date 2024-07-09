@@ -5,6 +5,7 @@ import { MainLazy } from "../../pages/Main/MainLazy";
 import { ProfileLazy } from "../../pages/Profile/ui/ProfileLazy";
 import PrivateRoute from "../../widgets/PrivateRoute/PrivateRoute";
 import { PostLazy } from "../../pages/PostPage/ui/PostPageLazy";
+import { CreatePostPageLazy } from "../../pages/CreatePostPage/ui/CreatePostPageLazy";
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +34,16 @@ export const router = createBrowserRouter([
         path: "/post/:id",
         element: <PostLazy />,
         
+      },
+      {
+        path: "/createPost",
+        element: <PrivateRoute />,
+        children: [
+          {
+            path: "",
+            element: <CreatePostPageLazy />,
+          },
+        ],
       },
     ],
   },

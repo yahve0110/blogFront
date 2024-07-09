@@ -7,6 +7,8 @@
   max-height: calc(100vh - 60px);
   overflow: auto;
   box-sizing: border-box;
+  background: var(--secondary-color);
+  transition: var(--transition03);
 }
 
 .filters {
@@ -19,5 +21,4 @@
   border-radius: var(--border);
   padding: 20px;
   color: var(--text-color);
-
 }

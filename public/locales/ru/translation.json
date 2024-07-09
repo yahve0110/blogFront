@@ -27,5 +27,6 @@
   "welcome": "Добро пожаловать",
   "profileName": "Имя",
   "secondName": "Фамилия",
-  "ReadBtn": "Читать..."
+  "ReadBtn": "Читать...",
+  "createPost": "Добавить пост"
 }

@@ -83,7 +83,7 @@ const LoginFormComponent = () => {
             {error && <p className={styles.error}>{error}</p>}{" "}
             {/* Отображение ошибки, если она есть */}
           </div>
-          <Button>{t("loginBtn")}</Button>
+          <Button size="large">{t("loginBtn")}</Button>
         </form>
       </div>
       <span className={styles.signup}>

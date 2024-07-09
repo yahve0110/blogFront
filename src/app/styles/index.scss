@@ -2,7 +2,7 @@
 @import "themes/light.scss";
 @import "variables/main.scss";
 
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -17,7 +17,9 @@ body {
 
 .page {
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 59px);
+  background: var(--secondary-color);
+
   transition: var(--transition03);
   display: flex;
   justify-content: center;
@@ -25,4 +27,5 @@ body {
 
 .main-content {
   width: 1140px;
+  background: var(--secondary-color);
 }

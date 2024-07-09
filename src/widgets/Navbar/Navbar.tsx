@@ -57,7 +57,7 @@ const Navbar: React.FC = memo(() => {
 
   const logout = () => {
     closeLocalModal();
-    handleLogout()
+    handleLogout();
   };
 
   return (
@@ -72,7 +72,16 @@ const Navbar: React.FC = memo(() => {
         <div className={styles.navbarend}>
           <div className={styles.loginText}>
             <LocalModal show={isLocalModalOpen ? true : false}>
-              {isLogged && <NavLink to="/profile" onClick={closeLocalModal}>{t("navProfile")}</NavLink>}
+              {isLogged && (
+                <NavLink to="/profile" onClick={closeLocalModal}>
+                  {t("navProfile")}
+                </NavLink>
+              )}
+              {isLogged && (
+                <NavLink to="/createPost" onClick={closeLocalModal}>
+                  {t("createPost")}
+                </NavLink>
+              )}
               {isLogged && (
                 <span className={styles.logout} onClick={logout}>
                   {t("logout")}
@@ -119,8 +128,9 @@ const Navbar: React.FC = memo(() => {
           </button>
         </div>
       </div>
-      <div onClick={switchTheme}>{theme === "light" ? <Sun /> : <Moon />}</div>
-
+      <div className={styles.themeSwitch} onClick={switchTheme}>
+        {theme === "light" ? <Sun /> : <Moon />}
+      </div>
     </div>
   );
 });

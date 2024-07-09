@@ -27,5 +27,6 @@
   "logout": "Logout",
   "profileName": "Name",
   "secondName": "Second name",
-  "ReadBtn": "Read more..."
+  "ReadBtn": "Read more...",
+  "createPost": "Create post"
 }

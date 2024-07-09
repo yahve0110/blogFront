@@ -6,6 +6,7 @@ import Button from "../../../widgets/Button/Button";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import ContentBlock from "../../../shared/ui/ContentBlock/ContentBlock";
 
 interface Props {
   post: PostType;
@@ -25,7 +26,7 @@ const Post: React.FC<Props> = ({ post }) => {
   };
 
   return (
-    <div className={styles.postContainer}>
+   <ContentBlock>
       <div className={styles.authorContainer}>
         <img src={post.authorAvatar} alt="avatar" />
         <a href={`/profile/${post.authorId}`}> {post.authorName}</a>
@@ -46,7 +47,8 @@ const Post: React.FC<Props> = ({ post }) => {
       <Button size="small" onClick={redirectToPostPage}>
         {t("ReadBtn")}
       </Button>
-    </div>
+  
+    </ContentBlock>
   );
 };
 
